@@ -21,7 +21,7 @@ class Apromise {
                 this.status = 'fulfilled';
                 this.value = res;
                 this.fulfillArr.forEach(item => item(res));
-            })
+            },0)
         };
 
         try {
